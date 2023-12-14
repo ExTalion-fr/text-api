@@ -1,5 +1,6 @@
 
 let mode = 'text';
+const PAT = 'f5bb3d076e22464186cf586c7addd05a';
 
 $(function(){
     window.onload = (e) => {
@@ -40,7 +41,6 @@ function sendMessage (message, sender) {
 }
 
 function sendImageMessage(message) {
-    const PAT = 'f5bb3d076e22464186cf586c7addd05a';    
     const USER_ID = 'stability-ai';
     const APP_ID = 'stable-diffusion-2';
     const MODEL_ID = 'stable-diffusion-xl';
@@ -83,7 +83,6 @@ function sendImageMessage(message) {
 }
 
 function sendTextMessage(message) {
-    const PAT = 'f5bb3d076e22464186cf586c7addd05a';
     const USER_ID = 'openai';    
     const APP_ID = 'chat-completion';
     const MODEL_ID = 'GPT-3_5-turbo';
@@ -160,7 +159,6 @@ function addMessage(message, sender, image = false) {
 }
 
 function speak(message) {
-    const PAT = 'f5bb3d076e22464186cf586c7addd05a';
     const USER_ID = 'openai';    
     const APP_ID = 'tts';
     const MODEL_ID = 'openai-tts-1';
